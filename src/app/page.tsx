@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Dna, Send, Loader2, Sparkles, Shield, Copyright } from 'lucide-react';
+import { Dna, Send, Loader2, Sparkles, Shield } from 'lucide-react';
 
 export default function Home() {
   const [input, setInput] = useState('');
@@ -126,21 +126,22 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-6 px-4 border-t border-white/10 bg-black/50">
-        <div className="max-w-4xl mx-auto text-center space-y-3">
-          <p className="text-blue-300 font-semibold">
-            Aditya Patange Productions
+      <footer className="py-8 px-4 border-t border-white/10 bg-black/80">
+        <div className="max-w-4xl mx-auto text-center space-y-4">
+          <p className="text-blue-300 text-2xl tracking-wider" style={{ fontFamily: 'Norwester, sans-serif' }}>
+            Aditya Patange Productions™
           </p>
-          <p className="text-gray-400 text-sm">
-            Powered by EB WiFi
+          <p className="text-gray-300 text-base tracking-wide" style={{ fontFamily: 'Norwester, sans-serif' }}>
+            Powered by EB WiFi®
           </p>
-          <div className="flex items-center justify-center gap-2 text-gray-500 text-xs">
-            <Copyright className="w-3 h-3" />
-            <span>{new Date().getFullYear()} All Rights Reserved</span>
-            <span className="mx-2">|</span>
-            <span>Trademark</span>
-            <span className="mx-2">|</span>
-            <span>Rights Reserved</span>
+          <div className="flex items-center justify-center gap-3 text-gray-400 text-sm" style={{ fontFamily: 'Norwester, sans-serif' }}>
+            <span>© {new Date().getFullYear()} All Rights Reserved</span>
+            <span className="text-blue-400">|</span>
+            <span>Trademark™</span>
+            <span className="text-blue-400">|</span>
+            <span>Copyrighted©</span>
+            <span className="text-blue-400">|</span>
+            <span>Rights Reserved®</span>
           </div>
         </div>
       </footer>
